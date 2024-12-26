@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .user-info {
+            background-color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .user-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Pribadi</h1>
+    <form id="infoForm">
+        <input type="text" id="name" placeholder="Masukkan Nama" required>
+        <input type="email" id="email" placeholder="Masukkan Email" required>
+        <textarea id="message" placeholder="Masukkan Pesan" required></textarea>
+        <button type="submit">Kirim Data</button>
+    </form>
+
+    <div id="userInfo" class="user-info">
+        <h2>Data Anda:</h2>
+        <p id="userName"></p>
+        <p id="userEmail"></p>
+        <p id="userMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
